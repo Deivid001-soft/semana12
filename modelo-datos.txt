@@ -1,0 +1,17 @@
+Modelo de datos relacional para "Petición en 3 Clics"
+
+Entidad: Causa
+- id (Clave primaria, entero autoincremental)
+- titulo (Texto corto con el nombre de la propuesta)
+- descripcion (Texto largo con el detalle y objetivo de la petición)
+- fecha (Fecha y hora en que se creó la causa)
+
+Entidad: Apoyo
+- id (Clave primaria, entero autoincremental)
+- causa_id (Clave foránea que relaciona el apoyo con la entidad Causa)
+- nombre (Texto con el nombre o identificación general del ciudadano)
+- fecha (Fecha y hora en que se registró el respaldo)
+
+Explicación de las entidades:
+- Causa: Sirve como entidad principal para almacenar la información de cada problema o iniciativa propuesta por la comunidad, centralizando el objetivo general del reclamo ciudadando.
+- Apoyo: Sirve como entidad transaccional y relacional. Al conectarse con "Causa" mediante "causa_id", permite registrar múltiples firmas o respaldos sin duplicar la información de la propuesta original, garantizando integridad y facilitando el conteo automatizado.
