@@ -1,0 +1,10 @@
+Automatización de notificaciones con n8n y Telegram
+
+1. Evento disparador (Trigger):
+Se activa a través de un Webhook cuando una nueva causa es registrada exitosamente en la base de datos, o cuando una causa existente alcanza un objetivo específico de apoyos (por ejemplo, 100 firmas).
+
+2. Mensaje que se envía al canal de Telegram:
+"¡Nueva iniciativa comunitaria en marcha! Se ha publicado la petición: [Título de la Causa]. Ingresa a la plataforma para conocer más detalles y sumar tu apoyo en 3 clics."
+
+3. Información que NO debe enviarse por seguridad (Minimización de datos):
+Por principios de privacidad y protección de datos, el mensaje jamás debe incluir números de cédula, direcciones de residencia, correos electrónicos, números telefónicos, direcciones IP ni datos personales del ciudadano que creó la causa o de quienes la han apoyado. Solo se difunde información pública general (título y métricas de apoyo).
