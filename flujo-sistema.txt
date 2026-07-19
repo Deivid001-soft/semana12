@@ -1,0 +1,8 @@
+Flujo de funcionamiento del sistema "Petición en 3 Clics":
+
+1. Registro de la causa: Un miembro de la comunidad redacta y publica una nueva propuesta ciudadana con su título y descripción en la plataforma.
+2. Almacenamiento persistente: El backend procesa la solicitud y guarda la causa en la base de datos asignándole un identificador único y fecha de creación.
+3. Recolección de apoyos: Otros ciudadanos acceden al listado público, seleccionan la causa de su interés y registran su respaldo en la base de datos con un solo clic.
+4. Conteo y monitoreo: El sistema consulta la relación entre tablas para calcular en tiempo real el número total de apoyos que ha acumulado la petición.
+5. Generación de documento formal: Al alcanzar la meta de respaldos, el sistema automatiza la compilación de la información y genera un archivo PDF listo para su descarga o impresión.
+6. Notificación y difusión: Se activa una alerta automática para avisar a la comunidad que la causa está lista para ser presentada ante las autoridades o entidades correspondientes.
